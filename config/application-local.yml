@@ -1,0 +1,31 @@
+server:
+  port: 8880
+  context-path: /my-mock
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:18080/eureka-server/eureka
+  instance:
+    preferIpAddress: false
+    health-check-url-path: /my-mock/health
+    status-page-url-path: /my-mock/info
+management:
+  security:
+    enabled: false
+    roles: SUPERUSER
+security:
+  user:
+    name: admin
+    password: secret
+spring:
+  application:
+    name: my-mock
+microservice:
+  username: testuser
+  password: testpass
+logging:
+  file: ./log/my-mock.log
+#  level:
+#    org:
+#      springframework: DEBUG
+#      hibernate: DEBUG

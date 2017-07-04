@@ -1,4 +1,4 @@
-package com.bill.mock;
+package com.bill.mock.configuration;
 
 import javax.validation.Valid;
 
@@ -21,25 +21,6 @@ public class WmsAllocationConfiguration2 {
 	
 	@Autowired
 	Config config;
-
-//	public String getUsername() {
-//		return username;
-//	}
-//
-//	public void setUsername(String username) {
-//		this.username = username;
-//	}
-//
-//	public String getPassword() {
-//		return password;
-//	}
-//
-//	public void setPassword(String password) {
-//		this.password = password;
-//	}
-
-//	@Value("${password}")
-//	public String password;
 	
 //	This way worked
 	public String password = "testpass";

@@ -1,4 +1,4 @@
-package com.bill.mock;
+package com.bill.mock.configuration;
 
 import org.hibernate.validator.constraints.NotEmpty;
 import org.springframework.boot.context.properties.ConfigurationProperties;

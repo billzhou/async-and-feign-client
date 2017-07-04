@@ -23,6 +23,10 @@ spring:
 microservice:
   username: testuser
   password: testpass
+com:
+  bill:
+    async:
+      threadNamePrefix: Bill-Conf-
 logging:
   file: ./log/my-mock.log
 #  level:
